@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kale Gallery Contact Form</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+        <style>
+        
+        .container-form {
+            border: 1px solid;
+            color: #000066;
+            width: 375px;
+            margin: 0;
+            padding: 0;
+        }
+            
+        form {
+            width: 350px;
+            height: auto;
+            margin:0;
+            padding: 0;
+            border: 1px solid;
+        }
+        
+        label, input, textarea {
+            display:block;
+            width:96%;
+            background-color: transparent;
+        }
+        
+        legend {
+            color: #000066;
+            font-family: freight-sans-pro, sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            margin-top:2em;
+            position:relative;
+            top:-1em;
+            left:-.75em;
+            background-color: transparent;
+        }
+        
+        ul {
+            list-style:none;
+        }
+    
+        label {
+            color: #000066;
+            font-family: freight-sans-pro, sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            padding: .25em;
+        }
+        
+        input, textarea {
+            color: #000066;
+            font-family: freight-sans-pro, sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            padding:.25em;
+            border-radius:.25em;
+            border: 1px solid #777;
+            background: #ececec;
+        }
+        
+        input:focus, input:hover, textarea:focus, textarea:hover {
+            background:white;
+            outline:none;
+            border-color:#000000;
+        }
+        
+        input[type=submit] {
+            margin-top: 2em;
+            background:darkslateblue;
+            color:#fff;
+            margin-left: .3em;
+        }
+        
+        fieldset {
+            background: transparent;
+            padding: 1em;
+            padding-top: 0;
+            padding-bottom: 1.5em;
+            border: none;
+        }
+        
+@media screen and (min-width:600px) {
+            
+            form {
+              max-width: 400px;
+              margin: 3em auto;
+            }
+            
+            li {overflow:hidden; margin-bottom:1em;}
+            
+            label, input, textarea {
+                float:left;
+                width:300px;
+            }   
+        
+        label {
+            text-align:left;
+            padding: .5em;
+            margin-left:-.4em;
+        }
+            
+        /* input[type=submit] {
+           margin-left:130px; 
+        } */
+}     
+    </style>
+</head>
+    
+<body>
+    <div class="container-form">
+    <div class="contact">
+        <form action="form.php" method="post">
+            <fieldset>
+                <legend>Contact Us</legend>
+                
+                <label for="name">First Name:</label>
+                <input type="text" name="name" placeholder="i.e. John" required />
+                
+                <label for="name">Last Name:</label>
+                <input type="text" name="name" placeholder="i.e. Smith" required />
+                
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="i.e. test@test.com" required />
+                
+                <label for="Subject">Subject:</label>
+                <input type="subject" name="subject" placeholder="i.e. Mentoring Program" required />
+                
+                <label for="message">Questions or comments?</label>
+                <textarea name="message" placeholder="Please share your questions and/or comments here. Thank you."></textarea>
+                
+                <input type="submit" name="submitted" />
+            </fieldset>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
